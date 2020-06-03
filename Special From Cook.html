@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delicious Point</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        #navbar {
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        #navbar a:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        #navbar a.active {
+            background-color: black;
+            color: white;
+        }
+        
+        .content {
+            padding: 16px;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        .sticky+.content {
+            padding-top: 60px;
+        }
+        
+        body {
+            background-color: #ddd;
+            font-family: cursive;
+        }
+        
+        .glow {
+            font-size: 80px;
+            color: #fff;
+            text-align: center;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+        }
+        
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="header" style="background-color: black;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm p">
+                        <center>
+                            <p><img src="img/img/logoi/IMG_20200421_234748_329.jpg" class="img-fluid" alt="Responsive image" height="200px" width="200px"></p>
+                        </center>
+                    </div>
+                    <div class="col-sm">
+
+                    </div>
+                    <div class="col-sm p">
+                        <div style="padding: 20px;">
+                            <div style="color: white">
+                                <h3><b><i><img src="img/img/ic.png" height="100px" width="100px"> 7272-00-6161</i></b></h3>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="navbar">
+            <a class="active" href="index.html">
+                <h3><i><b><center>HOME</center></b></i></h3>
+            </a>
+            <a href="about.html">
+                <h3><i><b><center> ABOUT US </center></b></i></h3>
+            </a>
+            <a href="menu.html">
+                <h3><i><b><center>MENU</center></b></i></h3>
+            </a>
+        </div>
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+
+    </section>
+    <section>
+        <div id="section">
+            <div class="contenior">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="sf/bp.jpeg" class="card-img-top" alt="" width="300px" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="zs.html" class="btn btn-primary">PASTA</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="sf/cbp.jpeg" class="card-img-top" alt="" width="300px" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="zs.html" class="btn btn-primary">e</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="section">
+            <div class="contenior">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="sf/kkb.jpeg" class="card-img-top" alt="" width="300px" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="zs.html" class="btn btn-primary">PASTA</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="sf/pb.jpeg" class="card-img-top" alt="" width="300px" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="zs.html" class="btn btn-primary">e</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="section">
+            <div class="contenior">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="sf/m.jpeg" class="card-img-top" alt="" width="300px" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="zs.html" class="btn btn-primary">PASTA</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="sf/cm.jpeg" class="card-img-top" alt="" width="300px" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="zs.html" class="btn btn-primary">e</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div style="background-color:black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 p">
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row" style="background-color: black">
+                            <div class="col">
+                                <a href="https://www.facebook.com/pages/category/Restaurant/Dp-cafe-378534926075737/"><img src="img/sociali/fb.png" class="img-fluid" alt="Responsive image" height="50px" width="50px"></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.google.com/search?q=delicious+point+churu&oq=D&aqs=chrome.0.69i59j0j69i57j69i59j69i60l4.2007j0j7&sourceid=chrome&ie=UTF-8"><img src="img/sociali/g.png" class="img-fluid" alt="Responsive image" height="50px" width="50px"></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://instagram.com/deliciouspointchuru?igshid=jpnptt30li2u"> <img src="img/sociali/insta.png" class="img-fluid" alt="Responsive image" height="50px" width="50px"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
